@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Dental Appointment Online | SmileBright Dental Clinic [City]</title>
+  <meta name="description" content="Book your dental appointment online at SmileBright Dental Clinic in [City]. Choose a service, date and time with the best dentists near you. Emergency dentist slots are available." />
+
+  <link rel="canonical" href="https://www.smilebrightdental.com/appointment" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Book Dental Appointment Online | SmileBright Dental Clinic [City]" />
+  <meta property="og:description" content="Securely book dental appointments online with SmileBright Dental Clinic in [City] for check-ups, whitening, implants and emergency care." />
+  <meta property="og:url" content="https://www.smilebrightdental.com/appointment" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1588779225906-1c5b298be79e?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Book Dental Appointment Online | SmileBright Dental Clinic [City]" />
+  <meta name="twitter:description" content="Book an appointment with the best dentist in [City] in under a minute. Secure and convenient online booking." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1588779225906-1c5b298be79e?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "SmileBright Dental Clinic",
+    "url": "https://www.smilebrightdental.com/appointment",
+    "logo": "https://images.unsplash.com/photo-1588779225906-1c5b298be79e?auto=format&fit=crop&w=400&q=80",
+    "description": "Online appointment booking for SmileBright Dental Clinic in [City] including emergency dentist slots, cosmetic dentistry and family appointments.",
+    "telephone": "+91XXXXXXXXXX",
+    "medicalSpecialty": "Dentistry",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Smile Street",
+      "addressLocality": "[City]",
+      "addressRegion": "[State]",
+      "postalCode": "560001",
+      "addressCountry": "IN"
+    },
+    "openingHours": [
+      "Mo-Fr 09:00-20:00",
+      "Sa 09:00-18:00"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/",
+      "https://www.instagram.com/",
+      "https://www.linkedin.com/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" aria-label="Main navigation">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="SmileBright Dental Clinic home">
+        <span class="logo-mark">SB</span>
+        <span class="logo-text">
+          <span class="logo-title">SmileBright</span>
+          <span class="logo-subtitle">Dental Clinic</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="team.html">Our Dentists</a></li>
+          <li><a href="appointment.html" class="active">Appointment</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <div class="demo-toggle">
+          <label for="demoModeToggle">
+            <span>Instant Demo Mode</span>
+            <input type="checkbox" id="demoModeToggle" aria-label="Toggle instant demo mode" />
+            <span class="toggle-switch" aria-hidden="true"></span>
+          </label>
+        </div>
+        <a href="appointment.html" class="btn btn-primary header-book-btn">Book Appointment</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Book your appointment online</h1>
+        <p class="lead">
+          Use the secure form below to request an appointment with our dentists. Our team will confirm the nearest available slot
+          via WhatsApp, SMS or email. For immediate pain or swelling, please call our emergency line.
+        </p>
+        <div class="page-hero-cta">
+          <a href="tel:+91XXXXXXXXXX" class="btn btn-outline">Call emergency dentist</a>
+          <span class="badge-soft">Average confirmation time: &lt; 10 minutes during working hours</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="appointment-form-heading">
+      <div class="container appointment-layout">
+        <div class="appointment-main">
+          <h2 id="appointment-form-heading">Appointment details</h2>
+          <form class="form" id="appointmentForm" method="post" action="/contact" novalidate>
+            <!-- Note: backend should handle POST /contact when JavaScript is disabled -->
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="fullName">Full name</label>
+                <input id="fullName" name="name" type="text" autocomplete="name" required />
+                <span class="error-msg" data-error-for="fullName"></span>
+              </div>
+              <div class="form-field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+                <span class="error-msg" data-error-for="email"></span>
+              </div>
+              <div class="form-field">
+                <label for="phone">Mobile number</label>
+                <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required />
+                <span class="error-msg" data-error-for="phone"></span>
+              </div>
+              <div class="form-field">
+                <label for="service">Service required</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="general">General check-up & cleaning</option>
+                  <option value="whitening">Teeth whitening / smile makeover</option>
+                  <option value="orthodontics">Braces / clear aligners</option>
+                  <option value="implants">Dental implants / missing tooth</option>
+                  <option value="pediatric">Pediatric dentistry (children)</option>
+                  <option value="emergency">Emergency pain / swelling</option>
+                  <option value="other">Other / not sure</option>
+                </select>
+                <span class="error-msg" data-error-for="service"></span>
+              </div>
+              <div class="form-field">
+                <label for="preferredDate">Preferred date</label>
+                <input id="preferredDate" name="preferredDate" type="date" required />
+                <span class="error-msg" data-error-for="preferredDate"></span>
+              </div>
+              <div class="form-field">
+                <label for="preferredTime">Preferred time</label>
+                <input id="preferredTime" name="preferredTime" type="time" required />
+                <span class="error-msg" data-error-for="preferredTime"></span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Briefly describe your concern</label>
+              <textarea id="message" name="message" rows="4" placeholder="E.g., toothache in upper right jaw for 3 days, sensitivity to cold, etc." required></textarea>
+              <span class="error-msg" data-error-for="message"></span>
+            </div>
+
+            <!-- Honeypot field for spam protection (backend should also validate) -->
+            <div class="form-field honeypot" aria-hidden="true">
+              <label for="website">Website (leave blank)</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form-footnote">
+              <input type="checkbox" id="acceptTerms" name="acceptTerms" required />
+              <label for="acceptTerms">I agree to the <a href="#">privacy policy</a> and consent to receive appointment updates via phone, WhatsApp or email.</label>
+              <span class="error-msg" data-error-for="acceptTerms"></span>
+            </div>
+
+            <div class="form-footnote">
+              <input type="checkbox" id="newsletterOptIn" name="newsletterOptIn" />
+              <label for="newsletterOptIn">Send me preventive care tips and offers occasionally (no spam).</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="appointmentSubmitBtn">
+              <span class="btn-spinner" aria-hidden="true"></span>
+              <span>Submit appointment request</span>
+            </button>
+            <p class="form-note">You will also receive a confirmation email. If our booking API is unavailable, your request will be sent via email using a secure mail server.</p>
+            <p class="form-note small">Security: All submissions must be validated on the server, protected using CSRF tokens and spam filters (reCAPTCHA v3 or honeypot as above).</p>
+          </form>
+        </div>
+
+        <aside class="appointment-aside" aria-label="Appointment information">
+          <div class="card">
+            <h3>What happens after you submit?</h3>
+            <ol class="info-list">
+              <li>Your details are securely sent to our appointment API (`POST /api/appointments`).</li>
+              <li>Our team checks available slots with your preferred dentist and contacts you to confirm.</li>
+              <li>On confirmation, you receive a WhatsApp and email with the appointment details and a calendar invite.</li>
+            </ol>
+          </div>
+
+          <div class="card">
+            <h3>Emergency & walk-ins</h3>
+            <p>If you are in severe pain, have facial swelling or uncontrolled bleeding, please call our emergency line immediately.</p>
+            <p><strong>Emergency phone:</strong> <a href="tel:+91XXXXXXXXXX">+91XXXXXXXXXX</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/91XXXXXXXXXX?text=I%20need%20an%20emergency%20dentist">Message us now</a></p>
+          </div>
+
+          <div class="card">
+            <h3>Instant Demo Mode</h3>
+            <p>To demonstrate the booking experience offline, enable “Instant Demo Mode” in the header. The form will simulate a successful booking and show the confirmation overlay without calling the API.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="integration-notes-heading">
+      <div class="container">
+        <h2 id="integration-notes-heading">Backend & calendar integration notes</h2>
+        <p>This section is for developers integrating the frontend with your backend and calendar or email system.</p>
+        <div class="integration-grid">
+          <article class="card">
+            <h3>API endpoint: <code>POST /api/appointments</code></h3>
+            <p><strong>Sample JSON payload:</strong></p>
+            <pre class="code-block" aria-label="Sample JSON payload">
+{
+  "name": "Jane Doe",
+  "email": "jane@example.com",
+  "phone": "+91XXXXXXXXXX",
+  "service": "whitening",
+  "preferredDate": "2025-01-15",
+  "preferredTime": "16:00",
+  "message": "Teeth whitening and check-up",
+  "newsletterOptIn": true,
+  "source": "web-form"
+}
+            </pre>
+            <p>The API should return <code>201 Created</code> with a JSON body containing an appointment ID, confirmed date/time (if auto-assigned) and any additional metadata.</p>
+          </article>
+          <article class="card">
+            <h3>Node/Express integration (example)</h3>
+            <pre class="code-block" aria-label="Node Express example">
+app.post('/api/appointments', csrfProtection, async (req, res) => {
+  const { name, email, phone, service, preferredDate, preferredTime, message } = req.body;
+
+  // TODO: Validate input on server as well
+  // Save to DB
+  const appointment = await db.appointments.insert({ ...req.body, status: 'pending' });
+
+  // Send notification emails (e.g., using Nodemailer or SendGrid)
+  await emailClient.send({
+    to: 'reception@smilebrightdental.com',
+    subject: `New appointment request from ${name}`,
+    text: JSON.stringify(appointment, null, 2)
+  });
+
+  res.status(201).json({ id: appointment.id, appointment });
+});
+            </pre>
+          </article>
+          <article class="card">
+            <h3>Python / Flask integration (example)</h3>
+            <pre class="code-block" aria-label="Flask example">
+@app.post("/api/appointments")
+@csrf.exempt
+def create_appointment():
+    data = request.get_json()
+    # TODO: Validate fields and store in database
+    appointment_id = save_to_db(data)
+
+    # Send transactional email using your provider
+    send_email(
+        to="reception@smilebrightdental.com",
+        subject=f"New appointment from {data.get('name')}",
+        body=str(data),
+    )
+    return jsonify({"id": appointment_id, "appointment": data}), 201
+            </pre>
+          </article>
+          <article class="card">
+            <h3>Calendar & email notifications</h3>
+            <p><strong>ICS content example:</strong></p>
+            <pre class="code-block" aria-label="ICS example">
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SmileBright Dental Clinic//EN
+BEGIN:VEVENT
+UID:123456@example.com
+DTSTAMP:20250101T090000Z
+DTSTART:20250115T103000
+DTEND:20250115T110000
+SUMMARY:Dental appointment - SmileBright Dental Clinic
+LOCATION:123 Smile Street, [City]
+DESCRIPTION:Appointment with SmileBright Dental Clinic.
+END:VEVENT
+END:VCALENDAR
+            </pre>
+            <p>You can attach this ICS file to confirmation emails or provide a “Add to Google Calendar” link using the template:</p>
+            <pre class="code-block" aria-label="Google Calendar link">
+https://calendar.google.com/calendar/render?action=TEMPLATE
+&amp;text=Dental+Appointment+-+SmileBright
+&amp;dates=20250115T103000/20250115T110000
+&amp;details=Appointment+with+SmileBright+Dental+Clinic
+&amp;location=123+Smile+Street+[City]
+            </pre>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-mark">SB</span>
+          <span class="logo-text">
+            <span class="logo-title">SmileBright</span>
+            <span class="logo-subtitle">Dental Clinic</span>
+          </span>
+        </a>
+        <p class="footer-text">
+          Secure, convenient and human-friendly online booking for all your dental needs in [City].
+        </p>
+        <p class="footer-meta">&copy; <span id="year"></span> SmileBright Dental Clinic.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Visit us</h3>
+        <p>123 Smile Street, [City], [State] 560001</p>
+        <p><a href="tel:+91XXXXXXXXXX">+91XXXXXXXXXX</a></p>
+        <p><a href="mailto:hello@smilebrightdental.com">hello@smilebrightdental.com</a></p>
+        <p><a href="https://wa.me/91XXXXXXXXXX?text=I'm%20interested%20in%20booking%20an%20appointment">WhatsApp: Chat now</a></p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick contact</h3>
+        <form class="form footer-form" id="footerContactFormAppointment" method="post" action="/api/contact" novalidate>
+          <div class="form-field">
+            <label for="footerNameAppointment">Name</label>
+            <input id="footerNameAppointment" name="name" type="text" required />
+          </div>
+          <div class="form-field">
+            <label for="footerEmailAppointment">Email</label>
+            <input id="footerEmailAppointment" name="email" type="email" required />
+          </div>
+          <div class="form-field">
+            <label for="footerMessageAppointment">Message</label>
+            <textarea id="footerMessageAppointment" name="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary btn-block">
+            <span class="btn-spinner" aria-hidden="true"></span>
+            <span>Send message</span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p><a href="index.html">Home</a> • <a href="#">Privacy policy</a></p>
+      <div class="footer-social" aria-label="Social media links">
+        <a href="#">Fb</a>
+        <a href="#">Ig</a>
+        <a href="#">in</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment success overlay -->
+  <div class="overlay" id="successOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+    <div class="overlay-backdrop" data-overlay-close></div>
+    <div class="overlay-dialog">
+      <button class="overlay-close" type="button" aria-label="Close">×</button>
+      <div class="overlay-body">
+        <div class="success-icon">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="success-circle" cx="60" cy="60" r="52" fill="none" stroke="#22c55e" stroke-width="8" />
+            <path class="success-check" d="M38 62 L52 76 L82 46" fill="none" stroke="#22c55e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="badge-success small">99% success rate</span>
+        </div>
+        <h2 id="successTitle">Appointment confirmed — we will contact you shortly</h2>
+        <p>Thank you for booking with SmileBright Dental Clinic. Our team will review your request and share confirmation via WhatsApp, SMS or email.</p>
+        <div class="booking-summary" id="bookingSummary" aria-live="polite"></div>
+        <div class="overlay-actions">
+          <button type="button" class="btn btn-primary" id="addToCalendarBtn">Add to Google / Calendar</button>
+          <a href="https://wa.me/91XXXXXXXXXX?text=I'd%20like%20to%20confirm%20my%20dental%20appointment" target="_blank" rel="noopener" class="btn btn-outline">Confirm via WhatsApp</a>
+        </div>
+        <p class="overlay-note">If you do not receive a confirmation within 15 minutes during working hours, please call us directly at <a href="tel:+91XXXXXXXXXX">+91XXXXXXXXXX</a> or email <a href="mailto:hello@smilebrightdental.com">hello@smilebrightdental.com</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/scripts.js" defer></script>
+</body>
+</html>
